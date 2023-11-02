@@ -17,7 +17,9 @@ git clone https://github.com/PowerDNS/pdns-builder.git
 mv pdns-builder/* .
 ```
 
-4. Overwrite the `Dockerfile-{auth, recursor}` files found in the pdns root folder with the one provided in this repository
+4. Overwrite the content of `pdns/builder-support/helpers/install_rust.sh` with the content of the provided `install_rust.sh`
+
+5. Overwrite the `Dockerfile-{auth, recursor}` files found in the pdns root folder with the one provided in this repository
 
 Now you can either build OR directly run the image using the provided `docker-compose.yaml` file
 Build it directly on an ARM plateform such as raspberrypi
